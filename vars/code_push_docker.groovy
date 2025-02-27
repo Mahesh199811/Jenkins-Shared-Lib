@@ -8,3 +8,4 @@ def call(String credId , String ImageId)
                 sh "docker image tag ${ImageId} ${env.dockerHubUser}/${ImageId}"
                 sh "docker push ${env.dockerHubUser}/${ImageId}"
 }
+}
